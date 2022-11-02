@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/cv_margin_start"
+        android:layout_marginEnd="@dimen/cv_margin_start"
+        android:elevation="@dimen/cv_elevation"
+        android:background="@color/white"
+        app:cardCornerRadius="@dimen/cv_corner_radius"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="@dimen/rv_linear_padding">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ"
+                android:layout_width="@dimen/circular_image_size"
+                android:layout_height="@dimen/circular_image_size"
+                android:contentDescription="@string/image"
+                android:src="@mipmap/ic_launcher_round"
+                app:civ_border_color="@color/circular_image_border"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ll_margin_start"
+                android:orientation="vertical"
+                android:layout_marginEnd="@dimen/ll_margin_end">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/et_text_size"
+                    android:textColor="@color/primaryTextColor"
+                    android:textStyle="bold"
+                    android:text="Name"/>
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/rv_description"
+                    android:textColor="@color/rv_description_text_color"
+                    android:text="@string/rv_description"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

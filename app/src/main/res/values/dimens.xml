@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="padding_main">16dp</dimen>
+    <dimen name="et_text_size">16sp</dimen>
+    <dimen name="btn_text_size">18sp</dimen>
+    <dimen name="btn_padding">8sp</dimen>
+    <dimen name="text_input_margin_top">5dp</dimen>
+    <dimen name="txt_add_image_padding">10dp</dimen>
+    <dimen name="image_size">200dp</dimen>
+    <dimen name="image_layout_margin">15dp</dimen>
+    <dimen name="btn_radius">10dp</dimen>
+    <dimen name="image_padding">2dp</dimen>
+    <dimen name="btn_marginTop">24dp</dimen>
+    <dimen name="image_border_stroke">0.5dp</dimen>
+    <dimen name="image_shape_radius">3dp</dimen>
+    <dimen name="add_image_txt_size">18sp</dimen>
+    <dimen name="add_image_txt_margin_start">5dp</dimen>
+    <dimen name="cv_margin_start">8dp</dimen>
+    <dimen name="cv_elevation">3dp</dimen>
+    <dimen name="cv_corner_radius">3dp</dimen>
+    <dimen name="rv_linear_padding">5dp</dimen>
+    <dimen name="circular_image_size">70dp</dimen>
+    <dimen name="ll_margin_start">10dp</dimen>
+    <dimen name="ll_margin_end">2dp</dimen>
+    <dimen name="rv_description">14sp</dimen>
+    <dimen name="rv_margin_top">5dp</dimen>
+    <dimen name="image_size_detail">250dp</dimen>
+    <dimen name="image_detail_margin">8dp</dimen>
+    <dimen name="location_detail">18sp</dimen>
+    <dimen name="location_detail_margin">8dp</dimen>
+    <dimen name="margin_top_location_detail">16dp</dimen>
+    <dimen name="desc_detail_size">16sp</dimen>
+    <dimen name="btn_start_end_detail">8dp</dimen>
+    <dimen name="btn_margin_top_detail">16dp</dimen>
+    <dimen name="btn_padding_top_bottom">8dp</dimen>
+
+
+</resources>

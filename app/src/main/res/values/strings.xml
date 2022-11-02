@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Happy Places</string>
+    <string name="et_hint_title">Title</string>
+    <string name="et_hint_description">Description</string>
+    <string name="et_hint_date">Date</string>
+    <string name="et_hint_location">Location</string>
+    <string name="txt_add_image">Add Image</string>
+    <string name="save">save</string>
+    <string name="fab_btn">fab_btn</string>
+    <string name="add_new_places">No Happy Places Found Yet. Kindly add one</string>
+    <string name="image">image</string>
+    <string name="rv_description">Description</string>
+    <string name="location">Location</string>
+    <string name="description">Description</string>
+
+    <string name="google_api_key">AIzaSyDDi1fmrCWvOayqkN1xdQYTS5vTeN7lhzE</string>
+    <string name="view_on_map">View On Map</string>
+</resources>

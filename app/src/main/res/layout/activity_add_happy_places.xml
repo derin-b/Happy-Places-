@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddHappyPlaces">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarPlace"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/CustomToolBar"
+        app:title="ADD HAPPY PLACES"
+        android:background="@color/blue"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ScrollView
+        android:id="@+id/sv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:padding="@dimen/padding_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarPlace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_input_margin_top"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                >
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/et_hint_title"
+                    android:textSize="@dimen/et_text_size"
+                    android:inputType="textCapWords"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_input_margin_top"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                >
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/et_hint_description"
+                    android:textSize="@dimen/et_text_size"
+                    android:inputType="textCapSentences"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_input_margin_top"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                >
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/et_hint_date"
+                    android:textSize="@dimen/et_text_size"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_input_margin_top"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                >
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/et_hint_location"
+                    android:textSize="@dimen/et_text_size"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    android:inputType="textCapWords"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_select_current_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/image_border"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="SELECT CURRENT LOCATION"
+                android:textColor="@color/lightBlue"
+                android:textSize="16sp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/image_layout_margin"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_place"
+                    android:layout_width="@dimen/image_size"
+                    android:layout_height="@dimen/image_size"
+                    android:background="@drawable/image_border"
+                    android:src="@drawable/ic_image"
+                    android:padding="@dimen/image_padding"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/tv_add_image"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/add_image_txt_margin_start"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:textColor="@color/lightBlue"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/add_image_txt_size"
+                    android:padding="@dimen/txt_add_image_padding"
+                    android:text="@string/txt_add_image"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:paddingTop="@dimen/btn_padding"
+                android:background="@drawable/shape_btn"
+                android:paddingBottom="@dimen/btn_padding"
+                android:layout_marginTop="@dimen/btn_marginTop"
+                android:textSize="@dimen/btn_text_size"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
